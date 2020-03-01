@@ -1,0 +1,14 @@
+<html>
+<head>
+    <title>Search For a Book</title>
+</head>
+<body>
+    <form action="{% url 'search_results' %}" method="get">
+        <input name="q" type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+    <h3><a href="{% url 'index' %}"> Return to Home page</a></h3>
+
+</body>
+</html>
+

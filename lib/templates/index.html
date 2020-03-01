@@ -1,0 +1,38 @@
+{% load static %}
+<html>
+<head>
+<title></title>
+<link rel="stylesheet" href="{% static 'css/home/style.css' %}">
+</head>
+<body>
+  <a href="{% url 'search' %}">
+    <div class="cards-list">
+      <div class="card 1">
+        <div class="card_image">
+          <img src="{% static 'img/search.jpg' %}" /> 
+        </div>
+      </div>
+    </a>
+
+    <a href="{% url 'categories' %}">
+      <div class="card 2">
+        <div class="card_image">
+          <img src="{% static 'img/categories.jpg' %}" />
+        </div>
+      </div>
+    </a>
+
+    <a href="{% url 'admin:index' %}">
+      <div class="card 3">
+        <div class="card_image">
+          <img src="{% static 'img/admin.jpg' %}" />
+        </div>
+      </div>
+    </a>
+  </div>
+
+</body>
+</html>
+
+      <!-- <div class="card_title title-white">
+      </div> -->

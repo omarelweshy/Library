@@ -1,0 +1,24 @@
+{% load static %}
+<html>
+<head>
+<title>{{ book.name }}</title>
+</head>
+<body>
+<h1>
+    <div>
+        Name : {{book.name}}
+        <br>
+        Author : {{ book.author }}
+        <br>
+        Location : {{ book.location }}
+        <br>
+        Publish Day : {{ book.publish_date }}
+        <br>
+        Edition : {{ book.edition }}
+        <br>
+        About : {{ book.about }}
+    </div>
+    <h3><a href="{% url 'categories' %}"> Return to categories</a></h3>
+</h1>
+</body>
+</html>
