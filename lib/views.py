@@ -29,9 +29,6 @@ class SearchResultsView(ListView):
     def get_queryset(self):
         query = self.request.GET.get('q')
         book_list = Book.objects.filter(
-            Q(name__icontains=query)
+            Q(name__icontains=query) | Q(author__icontains=query) | Q(location__icontains=query)
         )
         return book_list
-
-def not_found(request):
-    return render(request, '404.html')

@@ -1,3 +1,8 @@
+body {
+  background-image: url("/static/img/background.jpg");
+  background-size: cover;
+  background-position: center center;
+}
 .books-list {
   padding-bottom: 10px;
   padding-right: 100px;

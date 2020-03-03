@@ -1,10 +1,8 @@
-/* body {
+body {
   background-image: url("/static/img/background.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
- } */
-
+  background-size: cover;
+  background-position: center center;
+}
 .cards-list {
   z-index: 0;
   width: 100%;

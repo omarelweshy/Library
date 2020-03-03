@@ -4,18 +4,19 @@
 <title>Books Catigories</title>
 <link rel="stylesheet" href="{% static 'css/categories/style.css' %}">
 </head>
-<body>
+<body class="body">
   <div class="cards-list">
-  {% for category in category %}
-      <a href="{% url 'books' slug=category.slug %}">
-          <div class="card">
-              <div class="card_image">
-                <img src="{{ category.category_image.url }}" />
-              </div>
-          </div>
-          </a>
-  {% endfor %}
-  </div>
+    {% for category in category %}
+        <a href="{% url 'books' slug=category.slug %}">
+            <div class="card">
+                <div class="card_image">
+                  <img src="{{ category.category_image.url }}" />
+                </div>
+            </div>
+            </a>
+    {% endfor %}
+    </div>
+
 </body>
 </html>
 

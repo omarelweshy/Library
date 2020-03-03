@@ -1,7 +1,13 @@
 from django.urls import path
 from lib import views
-from django.views.generic import TemplateView
+#from django.views.generic import TemplateView
 from lib.views import *
+from .admin import *
+
+admin.site.site_header = "HIET Library"
+admin.site.site_title = "Welcome to HIET Library Admin Panel"
+admin.site.index_title = "Welcome to HIET Library Admin Panel"
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('categories', CategoriesList.as_view(), name='categories'),

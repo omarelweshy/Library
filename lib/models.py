@@ -16,7 +16,10 @@ class Book(models.Model):
     location = models.CharField(max_length=250)
     publish_date = models.DateField()
     Edition = models.CharField(max_length=10)
-    about = models.CharField(max_length=500)
+    description = models.TextField(max_length=500)
+    availability = models.BooleanField(default=True)
+    quantity = models.IntegerField(default=0)
+
 
     def __str__(self):
         return self.name

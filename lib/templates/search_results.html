@@ -1,19 +1,22 @@
 {% load static %}
 <html>
 <head>
-<title>Books</title>
-<link rel="stylesheet" href="{% static 'css/books/style.css' %}">
+  <title>Search Results</title>
+  <link rel="stylesheet" href="{% static 'css/books/style.css' %}">
 </head>
 <body>
-  <div class="books-list">
-    {% for result in object_list %}
-    <a href="">
-      <h1><ul>{{result.name}}</ul></h1>
-      </div>
-    </a>
-    {% endfor %}
-    <h3><a href="{% url 'search' %}"> Return to search</a></h3>
+<div class="books-list">
+  {% for result in object_list %}
+<a href="{% url 'details' result.id %}">
+  <div class="book">
+    <div class="book_image">
+      <img src="{{ result.cover.url }}" />
+    </div>
+  </div> 
+</a> 
+</div>
 
-  </div>
+  {% endfor %}
+  <h3><a href="{% url 'search' %}"> Return to search</a></h3>
 </body>
 </html>

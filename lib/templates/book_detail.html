@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>{{ book.name }}</title>
+<link rel="stylesheet" href="{% static 'css/books/details.css' %}">
 </head>
 <body>
 <h1>
@@ -14,9 +15,9 @@
         <br>
         Publish Day : {{ book.publish_date }}
         <br>
-        Edition : {{ book.edition }}
+        Edition : {{ book.Edition }}
         <br>
-        About : {{ book.about }}
+        description : {{ book.description }}
     </div>
     <h3><a href="{% url 'categories' %}"> Return to categories</a></h3>
 </h1>
