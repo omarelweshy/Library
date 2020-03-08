@@ -1,3 +1,5 @@
+Use python or python3 // pip or pip3 as you like :)
+
 You can use this link
 https://docs.djangoproject.com/en/3.0/howto/windows/
 
