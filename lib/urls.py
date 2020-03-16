@@ -4,7 +4,7 @@ from lib import views
 from lib.views import *
 from .admin import *
 
-admin.site.site_header = "HIET Library"
+admin.site.site_header = "HIET-KFS Library"
 admin.site.site_title = "Welcome to HIET Library Admin Panel"
 admin.site.index_title = "Welcome to HIET Library Admin Panel"
 
