@@ -1,23 +1,23 @@
-Use python or python3 // pip or pip3 as you like :)
+1- `sudo apt-get update && sudo apt-get -y upgrade`
+2- `sudo apt-get install python3`
+and Check if you have python3
+`python3 -V`
+Then, install pip3
+Run `sudo apt-get install -y python3-pip`
+Check from installation of pip3
+Run `pip3 -V`
 
-You can use this link
-https://docs.djangoproject.com/en/3.0/howto/windows/
+install virtualenv
+Run `pip3 install virtualenv`
 
-and this video
-https://www.youtube.com/watch?v=MEcWRk9w0t0
+Run `virtualenv env`
 
-if you don't understand this video you can get another one from Youtube ..
+Then run `env/bin/activate` To active ENV
+after activate it now install django `pip3 install django`
 
-and this is a fast TODO:
-
-1- Install python3
-2- If windows add python3 to PATH "Environment"
-3- from cmd install pip3
-4- run the command `pip3 install django`
-5- Go to the dir by cmd
-6- run `python3 manage.py runserver`
-
-Now the projects run
+Go to project dir
+Now the projects Can run
+RUN server `python3 manage.py runserver` 
 
 To open admin panel
 run the command `python3 manage.py createsuperuser`
